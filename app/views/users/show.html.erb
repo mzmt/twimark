@@ -1,0 +1,35 @@
+<div class="main user-show">
+  <div class="container">
+    <div class="user">
+
+      <img src="<%= "/user_images/#{@user.image_name}" %>">
+      <h2><%= @user.name %></h2>
+      <p><%= @user.email %></p>   
+      <% if @user.id == @current_user.id %>
+      <%= link_to("編集", "/users/#{@user.id}/edit") %>
+      <% end %>
+    </div>
+
+<% @user.posts.each do |post|%>
+<div class= "posts">
+    <div class="posts-index-item">
+
+
+        <blockquote class="twitter-tweet" data-lang="ja">
+        <p lang="ja" dir="ltr"></p>&mdash;
+        <a href=" <%= post.tweet_url %> "></a></blockquote>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+        <p>
+         <%= link_to(post.created_at.strftime('%Y年%m月%d日 %H:%M:%S'),"/posts/#{post.id}") %>
+        </p>
+    </div>
+    <% end %>
+
+</div>
+
+
+
+    
+  </div>
+</div>

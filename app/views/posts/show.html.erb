@@ -1,0 +1,49 @@
+<div class="main posts-show">
+  <div class="container">
+    <div class="posts-show-item">
+<div class="post-user-name">
+        <img src="<%= "/user_images/#{@user.image_name}" %>">
+        <%= link_to(@user.name,"/users/#{@user.id}")  %>
+      </div>
+
+
+
+
+      <!-- 表示されるツイート -->
+      <div class = "post-title">
+        <p>
+        <blockquote class="twitter-tweet" data-lang="ja">
+        <p lang="ja" dir="ltr"></p>&mdash;
+        <a href=" <%= @post.tweet_url %> "></a></blockquote>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+        </p>
+      </div>
+      <div class="post-time">
+        <%= @post.created_at %>
+      </div>
+
+
+       <% if @user.id == @current_user.id %>
+      <!-- ツイートボタン -->
+      <p>
+        <a href="https://twitter.com/share" class="twitter-share-button" data-text="ツイートをブクマしたよ～～∠( 'ω')/" data-hashtags="twimark">Tweet</a>
+        <script>
+          !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+        </script>
+      </p>
+      <% end %>
+
+
+      <hr>
+      <div clsss = "post-content"
+
+      <div class = "post-menus">
+        <% if @user.id == @current_user.id %>
+      	<%= link_to("削除", "/posts/#{@post.id}/destroy",{method:"post"}) %>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
+

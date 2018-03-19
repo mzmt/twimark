@@ -1,0 +1,24 @@
+<div class="main posts-index">
+  <div class="container">
+  	<% @posts.each do |post| %>
+
+    <div class="posts-index-item">
+            <img src="<%= "/user_images/#{post.user.image_name}" %>">
+              <%= link_to(post.user.name, "/users/#{post.user.id}") %>
+
+        <div class = "tweet">
+
+        <blockquote class="twitter-tweet" data-lang="ja">
+        <p lang="ja" dir="ltr"></p>&mdash;
+        <a href=" <%= post.tweet_url %> "></a></blockquote>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+        </div>
+
+        <p>
+        <%= link_to(post.created_at.strftime('%Y年%m月%d日 %H:%M:%S'),"/posts/#{post.id}")    %>
+        </p>
+    </div>
+    <% end %>
+  </div>
+</div>
