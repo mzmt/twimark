@@ -8,7 +8,6 @@ Rails.application.routes.draw do
   post "users/:id/update" =>"users#update"
   get "users/:id/edit" => "users#edit"
   post "users/create" => "users#create"
-  get 'users/index'
   get "signup" => "users#new"
   get "users/:id" => "users#show"
 
@@ -19,7 +18,7 @@ Rails.application.routes.draw do
   post 'posts/create' => 'posts#create'
   post 'posts/:id/destroy' => 'posts#destroy'
 
-  get "/" => "home#top"
+  get "/" => "home#about"
   get "about" => "home#about"
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
