@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  root "home#about"
   get "login" => "users#login_form"
   post "login" => "users#login"
   post "logout" => "users#logout"
