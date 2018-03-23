@@ -1,4 +1,4 @@
-#!/usr/bin/env
+#!/usr/bin/env ruby2.3
 require 'pathname'
 require 'fileutils'
 include FileUtils
