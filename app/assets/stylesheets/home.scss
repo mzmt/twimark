@@ -216,3 +216,20 @@ header {
   font-size: 14px;
 }
 
+/* メディアクエリ ================================ */
+
+/*タブレット向け*/
+@media (max-width: 1000px) {
+  h1{
+    color:green;
+  }
+  
+}
+
+
+/*スマホ向け*/
+@media(max-width: 670px){
+  .about-main{
+    width:100%;
+  }
+}
