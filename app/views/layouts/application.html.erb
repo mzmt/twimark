@@ -4,6 +4,10 @@
 
   <!-- メディアクエリを読み込む -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- タブの色を変える -->
+    <meta name="theme-color" content="teal">
+    <!-- font awesome -->
+     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
     <title>twimark</title>
     <%= csrf_meta_tags %>
@@ -22,6 +26,9 @@
           <%= link_to("twimark", "/") %>
         <% end %>
       </div>
+
+      <span class="fa fa-bars menu-icon"></span>
+      
       <ul class="header-menus">
         <% if @current_user %>
           <li>
