@@ -216,17 +216,3 @@ header {
   font-size: 14px;
 }
 
-/* メディアクエリ ================================ */
-
-@media (max-width: 300px) {
-  h1{
-    color:green;
-  }
-  
-}
-
-@media(max-width: 670px){
-  .item{
-    width:100%;
-  }
-}

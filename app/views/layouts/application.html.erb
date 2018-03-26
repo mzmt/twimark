@@ -8,9 +8,10 @@
     <title>twimark</title>
     <%= csrf_meta_tags %>
 
+    <%= stylesheet_link_tag    'responsive' %>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-    
+
   </head>
 
   <body bgcolor = "teal">
@@ -23,8 +24,6 @@
         <% end %>
       </div>
       <ul class="header-menus">
-
-<h1>aa</h1>
         <% if @current_user %>
           <li>
             <%= link_to(@current_user.name,"/users/#{@current_user.id}") %>
