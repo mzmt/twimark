@@ -30,4 +30,7 @@
   .about-main{
     width:100%;
   }
+  .about-main img {
+  width: 64%;
+}
 }
