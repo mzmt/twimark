@@ -25,11 +25,11 @@
 
 /*スマホ向け*/
 @media(max-width: 670px){
-  .header{
+  header{
 	height: 64px;
 	}
   .hader-logo{
-	font-size: 30px;
+	font-size: 50px;
 	}
   .about-main{
     width:100%;
