@@ -79,7 +79,7 @@ header {
   color: white;
   font-size: 22px;
   line-height: 64px;
-font-family: 'Londrina Shadow', cursive;
+  font-family: 'Londrina Shadow', cursive;
 }
 
 .header-logo a{
@@ -87,7 +87,7 @@ font-family: 'Londrina Shadow', cursive;
   font-size: 44px;
 }
 
-.menu-icon {
+/*.menu-icon {
   color: white;
   float: right;
   font-size: 25px;
@@ -95,7 +95,7 @@ font-family: 'Londrina Shadow', cursive;
   display:none;
   line-height: 64px;
 }
-
+*/
 .header-menus {
   float: right;
   padding-right: 20px;
@@ -222,29 +222,4 @@ font-family: 'Londrina Shadow', cursive;
   width: 100%;
   border-radius: 0 0 2px 2px;
   font-size: 14px;
-}
-
-
-#menu{
-  width: 100%;
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 0;
-}
-#menu li{
-  display: block;
-  float: left;
-  width: 12.5%;
-  margin: 0;
-  padding: 0; }
-#menu li a{
-  display: block;
-  padding: 12px 0 10px;
-  background: #333;
-  color: #fff;
-  text-align: center;
-  text-decoration: none;
-}
-#toggle{ 
- display: none;
 }

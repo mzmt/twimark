@@ -16,28 +16,19 @@
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-
   </head>
 
   <body>
     <header>
-      
+      <div class="header-logo">
+<% if @current_user %>
+          <%= link_to("twimark", "/posts/index") %>
+        <% else %>
+          <%= link_to("twimark", "/") %>
+        <% end %>
+      </div>
 
-<div id="menu-box">
-  <div id="toggle"><a href="#">menu</a></div>
-  <ul id="menu" class="">
-    <li><a href="#">html</a></li>
-    <li><a href="#">css</a></li>
-    <li><a href="#">javascript</a></li>
-    <li><a href="#">php</a></li>
-    <li><a href="#">CGI</a></li>
-    <li><a href="#">Python</a></li>
-    <li><a href="#">Ruby</a></li>
-    <li><a href="#">java</a></li>
-  </ul>
-</div>
-
+<!--       <span class="fa fa-bars menu-icon"></span> -->
 
 
       <ul class="header-menus">
@@ -72,5 +63,6 @@
     <% end %>
     
     <%= yield %>
+
   </body>
 </html>
