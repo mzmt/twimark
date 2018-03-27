@@ -2,21 +2,6 @@
   <div class="container">
   	<% @posts.each do |post| %>
 
-
-
-<!-- <div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = 'https://connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.12';
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
- -->
-
-
-
-
     <div class="posts-index-item">
             <img src="<%= "/user_images/#{post.user.image_name}" %>">
               <%= link_to(post.user.name, "/users/#{post.user.id}") %>
@@ -28,9 +13,6 @@
         <a href=" <%= post.tweet_url %> "></a></blockquote>
         <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-
-<!-- <div class="fb-post" data-href="https://www.facebook.com/permalink.php?story_fbid=605400623143423&amp;id=100010204728258&amp;pnref=story" data-width="500" data-show-text="true"><blockquote cite="https://ja-jp.facebook.com/permalink.php?story_fbid=605400623143423&amp;id=100010204728258" class="fb-xfbml-parse-ignore"><p>送迎会</p><a href="https://www.facebook.com/people/Ryohei-Mizumoto/100010204728258">Ryohei Mizumoto</a>さんの投稿&nbsp;<a href="https://ja-jp.facebook.com/permalink.php?story_fbid=605400623143423&amp;id=100010204728258">2018年3月17日(土)</a></blockquote></div>
--->
         </div>
 
         <p>

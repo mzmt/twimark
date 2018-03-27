@@ -9,6 +9,7 @@
     <!-- font awesome -->
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Londrina+Shadow">
+
     <title>twimark</title>
     <%= csrf_meta_tags %>
 
@@ -28,6 +29,24 @@
           <%= link_to("twimark", "/") %>
         <% end %>
       </div>
+
+      <span class="fa fa-bars menu-icon"></span>
+
+
+<div id="menu-box">
+  <div id="toggle"><a href="#">menu</a></div>
+  <ul id="menu" class="">
+    <li><a href="#">html</a></li>
+    <li><a href="#">css</a></li>
+    <li><a href="#">javascript</a></li>
+    <li><a href="#">php</a></li>
+    <li><a href="#">CGI</a></li>
+    <li><a href="#">Python</a></li>
+    <li><a href="#">Ruby</a></li>
+    <li><a href="#">java</a></li>
+  </ul>
+</div>
+
 
 
       <ul class="header-menus">
@@ -62,7 +81,6 @@
     <% end %>
     
     <%= yield %>
-
-
+  <script src="script.js"></script>
   </body>
 </html>

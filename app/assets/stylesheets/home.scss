@@ -223,3 +223,31 @@ font-family: 'Londrina Shadow', cursive;
   border-radius: 0 0 2px 2px;
   font-size: 14px;
 }
+
+
+#menu{
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0;
+}
+#menu li{
+  display: block;
+  float: left;
+  width: 12.5%;
+  margin: 0;
+  padding: 0; }
+#menu li a{
+  display: block;
+  padding: 12px 0 10px;
+  background: #333;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+}
+#menu li a:hover{
+  background: #444;
+}
+#toggle{ 
+ display: none;
+}
