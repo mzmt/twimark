@@ -26,12 +26,9 @@
 
 
 /*スマホ向け*/
-@media(max-width: 500px){
-  .header-logo{
-	font-size: 20px;
-	}
-  .signup{
-	display: none;
+@media(max-width: 550px){
+  .hader-logo{
+	font-size: 30px;
 	}
   .about-main{
     width:100%;
@@ -51,7 +48,7 @@
 .flash {
   top: 130px;
 }
-.header-menus li {
-  line-height: 130px;
+.signup{
+	display: none;
 }
 }
