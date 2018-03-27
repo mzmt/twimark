@@ -22,16 +22,7 @@
 
   <body>
     <header>
-      <div class="header-logo">
-<% if @current_user %>
-          <%= link_to("twimark", "/posts/index") %>
-        <% else %>
-          <%= link_to("twimark", "/") %>
-        <% end %>
-      </div>
-
-      <span class="fa fa-bars menu-icon"></span>
-
+      
 
 <div id="menu-box">
   <div id="toggle"><a href="#">menu</a></div>
@@ -81,6 +72,5 @@
     <% end %>
     
     <%= yield %>
-  <script src="script.js"></script>
   </body>
 </html>
