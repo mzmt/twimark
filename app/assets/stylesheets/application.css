@@ -32,11 +32,12 @@
 	line-height: 40px;
 	}
   .header-menus{
-
+	width:100%;
 	}
   .header-menus li {
   font-size: 10px;
   padding-left: 10px;
+  white-space: nowrap;
 }
   .about-main{
     width:100%;
@@ -46,13 +47,13 @@
 }
 
   .main {
-  top: 130px;
+  top: 90px;
 }
 　　header {
-  height: 130px;
+  height: 90px;
 }
 .flash {
-  top: 130px;
+  top: 90px;
 }
 .signup{
 	display: none;

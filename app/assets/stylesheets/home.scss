@@ -89,6 +89,7 @@ header {
 .header-menus {
   float: right;
   padding-right: 20px;
+    white-space: nowrap;
 }
 
 .header-menus li {
@@ -97,6 +98,7 @@ header {
   font-size: 13px;
   color: white;
   padding-left: 15px;
+
 }
 
 .header-menus a {
