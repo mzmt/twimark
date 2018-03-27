@@ -27,8 +27,9 @@
 <!--       <span class="fa fa-bars menu-icon"></span> -->
 
 
-      <ul class="header-menus">
+
         <% if @current_user %>
+      <ul class="header-menus">
           <li>
             <%= link_to(@current_user.name,"/users/#{@current_user.id}") %>
           </li>
@@ -41,7 +42,9 @@
           <li>
             <%= link_to("ログアウト", "/logout",{method: :post}) %>
           </li>
+        </ul>
         <% else %>
+      <ul class="header-menus signup">
           <li>
             <%= link_to("新規登録", "/signup") %>
           </li>

@@ -27,9 +27,11 @@
 
 /*スマホ向け*/
 @media(max-width: 500px){
-  .hader-logo{
+  .header-logo{
 	font-size: 20px;
-	line-height: 130px;
+	}
+  .signup{
+	display: none;
 	}
   .about-main{
     width:100%;
