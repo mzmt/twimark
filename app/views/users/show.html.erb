@@ -11,9 +11,9 @@
       <p>登録日: <%= @user.created_at.strftime('%Y年%m月%d日')%></p>
       <% if @user.id == @current_user.id %>
       <p>
-        <%= link_to("プロフィール編集", "/users/#{@user.id}/edit") %>
+         URL:   https://twimark-alpha2-app.herokuapp.com/users/<%= @user.id %>
       </p>
-        URL:   https://twimark-alpha2-app.herokuapp.com/users/<%= @user.id %>
+        <%= link_to("プロフィール編集", "/users/#{@user.id}/edit") %>
       <% end %>
     </div>
 
